@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const addButton = document.getElementById('add-button');
+  // Corrected ID to match instructions
+  const addButton = document.getElementById('add-task-btn'); // Changed from 'add-button'
   const taskInput = document.getElementById('task-input');
   const taskList = document.getElementById('task-list');
 
