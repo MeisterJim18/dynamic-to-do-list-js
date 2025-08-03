@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Corrected ID to match instructions
-  const addButton = document.getElementById('add-task-btn'); // Changed from 'add-button'
+  const addButton = document.getElementById('add-task-btn');
   const taskInput = document.getElementById('task-input');
   const taskList = document.getElementById('task-list');
 
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const removeBtn = document.createElement('button');
     removeBtn.textContent = "Remove";
-    removeBtn.className = "remove-btn";
+    removeBtn.classList.add('remove-btn'); // Corrected to use classList.add()
     removeBtn.onclick = function() {
       taskList.removeChild(li);
     };
